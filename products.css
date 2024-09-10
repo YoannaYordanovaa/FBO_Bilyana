@@ -306,7 +306,6 @@ body {
   outline: none;
 }
 
-
 /*...............................Products_display...............................*/
 
 .box-up img {
@@ -516,13 +515,10 @@ main #pagination button {
   color: #ffffff;
 }
 
-
 /*...............................Media_query...............................*/
 
-
 @media (max-width: 1024px) {
-
-  .cover{
+  .cover {
     height: auto;
     background-image: none;
   }
@@ -545,7 +541,7 @@ main #pagination button {
   .mobile-dropdown-container.show {
     display: block;
   }
-  
+
   .mobile-dropdown-container {
     background-color: #ffffff;
     border-top: 1px #888888a8 solid;
@@ -630,7 +626,7 @@ main #pagination button {
     order: 3;
   }
 
-/*...............................Search_filter...............................*/
+  /*...............................Search_filter...............................*/
 
   .categories {
     margin-top: 10%;

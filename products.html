@@ -27,7 +27,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       />
-      <link rel="icon" type="icon" href="images/icon.png">
+      <link rel="icon" type="icon" href="images/icon.png" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
@@ -35,11 +35,15 @@
       <!-- -------------------Main part--------------------->
 
       <div class="cover">
-
         <div class="header">
-
           <img src="images/Bilyana_logo.png" alt="Logo" />
-          <a href="https://thealoeveraco.shop/26pYLa0E" class="button" target="_blank" rel="noopener"><button role="button">СФБ Регистрация</button></a>
+          <a
+            href="https://thealoeveraco.shop/26pYLa0E"
+            class="button"
+            target="_blank"
+            rel="noopener"
+            ><button role="button">СФБ Регистрация</button></a
+          >
           <div class="icon">
             <a
               title="Facebook link"
@@ -47,7 +51,11 @@
               rel="noopener"
               href="https://web.facebook.com/profile.php?id=100000639579555"
               ><i class="bi bi-facebook"></i></a
-            ><a title="instagram link" target="_blank" rel="noopener" href="https://www.instagram.com/martsenkovabiliana/"
+            ><a
+              title="instagram link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/martsenkovabiliana/"
               ><i class="bi bi-instagram"></i
             ></a>
             <p class="telephone">
@@ -59,9 +67,17 @@
           </div>
           <div class="menu"><h1 class="bi bi-list"></h1></div>
 
+
+          <!-- -------------------Dropdown--------------------->
+
+
           <div class="mobile-dropdown-container">
-            <a href="https://thealoeveraco.shop/26pYLa0E" class="button2"
-              ><button role="button" target="_blank" rel="noopener">СФБ Регистрация</button>
+            <a
+              href="https://thealoeveraco.shop/26pYLa0E"
+              class="button2"
+              target="_blank"
+              rel="noopener"
+              ><button role="button">СФБ Регистрация</button>
             </a>
             <div class="icons">
               <a
@@ -72,7 +88,12 @@
               >
                 <i class="bi bi-facebook"></i>
               </a>
-              <a title="Instagram link" target="_blank" rel="noopener" href="https://www.instagram.com/martsenkovabiliana/">
+              <a
+                title="Instagram link"
+                target="_blank"
+                rel="noopener"
+                href="https://www.instagram.com/martsenkovabiliana/"
+              >
                 <i class="bi bi-instagram"></i>
               </a>
               <p class="telephone">
@@ -109,7 +130,6 @@
       </div>
 
       <main class="main" id="main">
-
         <div class="categories">
           <ul>
             <li><a href="#" data-category="">Продукти</a></li>
@@ -139,7 +159,6 @@
         </div>
 
         <div class="search_filter">
-
           <div class="sort_filter">
             <h2>Сортирай:</h2>
             <select title="filter" id="sortOptions">
@@ -155,7 +174,6 @@
             <h2>Намери продукт &nbsp;<i class="bi bi-search"></i></h2>
             <input id="searchInput" placeholder="Търсене..." type="text" />
           </div>
-
         </div>
 
         <div class="row" id="products"></div>
@@ -163,7 +181,6 @@
         <div id="products"></div>
 
         <div id="pagination"></div>
-
       </main>
 
       <!-- -------------------Script--------------------->
@@ -174,7 +191,6 @@
       ></script>
 
       <script>
-        
         $(document).ready(function () {
           const itemsPerPage = 16;
           let currentPage = 1;
@@ -409,20 +425,19 @@
         });
 
         // Select the hamburger menu and the mobile dropdown container
-        const hamburgerMenu = document.querySelector(".menu h1"); 
+        const hamburgerMenu = document.querySelector(".menu h1");
         const dropdownContainer = document.querySelector(
           ".mobile-dropdown-container"
         );
 
         // Toggle the 'show' class on the dropdown container and toggle the hamburger to X icon
         hamburgerMenu.addEventListener("click", function () {
-          dropdownContainer.classList.toggle("show"); 
+          dropdownContainer.classList.toggle("show");
 
           // Toggle the icon between hamburger and X
-          this.classList.toggle("bi-list"); 
-          this.classList.toggle("bi-x"); 
+          this.classList.toggle("bi-list");
+          this.classList.toggle("bi-x");
         });
-
       </script>
     </body>
   </html>
