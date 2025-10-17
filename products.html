@@ -114,12 +114,12 @@
             <h1>Здравей!</h1>
             <p>
               Казвам се Биляна и съм част от Форевър Ливинг вече повече от 10
-              години! Ако си запознат с компанията вероятно знаеш, че това е
-              най-големият производител на алое вера в Света! А ако за първи път
+              години. Ако си запознат с компанията вероятно знаеш, че това е
+              най-големият производител на алое вера в Света. А ако за първи път
               чуваш за нея и искаш да разбереш повече, аз съм твоя човек! В
               моята страница ще намериш изобилие от продуктите на Форевър и ще
               имаш възможността да закупиш който и колкото пожелаеш с
-              <b>-15% отстъпка</b>, а ако имаш въпроси свързани с тях не се
+              <b>-15% отстъпка! </b> Ако имаш въпроси не се
               колебай да се свържеш с мен, ще се радвам да отговоря на всички
               тях!
             </p>
@@ -276,6 +276,9 @@
 
               let rowHtml = '<div class="row">';
               pageData.forEach(function (product) {
+                const euroRate = 1.95583;
+                let priceInEuro = (parseFloat(product.discount15) / euroRate).toFixed(2);
+                let priceInEuroMain = (parseFloat(product.price) / euroRate).toFixed(2);
                 console.log(product);
                 let productHtml = `
                   <div class="wrapper">
@@ -295,7 +298,7 @@
                               <div class="h-bg-inner"></div>
                           </div>
                           <a class="cart" href="#" target="_blank" data-id="${product.id}">
-                              <span class="price"><s>${product.price}</s><br>${product.discount15}</span>
+                               <span class="price"><s>€${priceInEuroMain}</s> &#x2758; <s>${product.price}</s> <br> €${priceInEuro} &#x2758; ${product.discount15} </span>  
                               <span class="see-more">Поръчай</span>
                           </a>
                       </div>
